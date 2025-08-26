@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "deploy": "gcloud app deploy",
+    "logs": "gcloud app logs tail",
+    "open": "gcloud app browse"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -16,6 +19,9 @@
     "nodemon": "^3.0.1"
   },
   "keywords": ["whatsapp", "analyzer", "machine-learning", "chat-analysis"],
+  "engines": {
+    "node": "18.x"
+  },
   "author": "Your Name",
   "license": "MIT"
 }

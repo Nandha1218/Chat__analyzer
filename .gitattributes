@@ -1,0 +1,27 @@
+# Force GitHub to recognize correct languages
+*.js linguist-language=JavaScript
+*.py linguist-language=Python
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.json linguist-language=JSON
+*.md linguist-language=Markdown
+*.txt linguist-language=Text
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+
+# Exclude certain files from language detection
+*.log linguist-vendored
+*.tmp linguist-vendored
+*.temp linguist-vendored
+node_modules/* linguist-vendored
+venv/* linguist-vendored
+env/* linguist-vendored
+__pycache__/* linguist-vendored
+
+# Force specific file types
+app.yaml linguist-language=YAML
+package.json linguist-language=JSON
+requirements.txt linguist-language=Text
+README.md linguist-language=Markdown
+DEPLOYMENT.md linguist-language=Markdown
+.gitignore linguist-language=Text
